@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-import audio from "../../../public/sounds/song.mp3";
+import { useState, useEffect, useRef } from 'react';
+import audio from '../../../public/sounds/song.mp3';
 
 const SoundBar = () => {
   const soundBarEl = useRef(null);
@@ -12,21 +12,23 @@ const SoundBar = () => {
   };
 
   useEffect(() => {
-    document.querySelector(".soundBars").onclick = function () {
-      this.classList.toggle("play");
+    soundBarEl.current.play();
+    document.querySelector('.soundBars').onclick = function () {
+      this.classList.toggle('play');
     };
   }, []);
 
   return (
     <div
-      className="soundBars link absolute top-3 right-14 flex items-center justify-center"
+      className='soundBars link absolute top-3 right-14 flex items-center justify-center'
       onClick={togglePlayPause}
     >
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-      <audio ref={soundBarEl} src={audio} loop preload="auto" />
+
+      <audio ref={soundBarEl} src={audio} loop preload='auto' />
     </div>
   );
 };

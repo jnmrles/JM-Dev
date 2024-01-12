@@ -1,11 +1,11 @@
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 
 const mail = ({ name, email, message }) => {
   return emailjs.send(
-    process.env.NEXT_PUBLIC_SERVICE_ID,
-    process.env.NEXT_PUBLIC_TEMPLATE_ID,
+    'service_khmy8hn',
+    'template_7p712wi',
     { name, email, message },
-    process.env.NEXT_PUBLIC_USER_ID
+    'L8B9m_k-6n_-7QhDi'
   );
 };
 

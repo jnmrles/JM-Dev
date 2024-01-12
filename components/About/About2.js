@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
-import { gsap, Linear } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useEffect, useRef } from 'react';
+import { gsap, Linear } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const About2 = ({ clientHeight }) => {
   const quoteRef = useRef(null);
@@ -13,32 +13,40 @@ const About2 = ({ clientHeight }) => {
 
     timeline
       .from(quoteRef.current, { opacity: 0, duration: 2 })
-      .to(quoteRef.current.querySelector(".about-3"), {
-        backgroundPositionX: "100%",
+      .to(quoteRef.current.querySelector('.about-3'), {
+        backgroundPositionX: '100%',
         duration: 1,
       });
 
     ScrollTrigger.create({
       trigger: targetSection.current,
-      start: "center bottom",
-      end: "center center",
+      start: 'center bottom',
+      end: 'center center',
       scrub: 0,
       animation: timeline,
     });
   }, [quoteRef, targetSection]);
 
   return (
-    <section className="w-full relative select-none" ref={targetSection}>
+    <section className='w-full relative select-none' ref={targetSection}>
+      <img
+        src='/left-pattern.svg'
+        className='absolute hidden left-0 -top-1/4 w-1/12 max-w-xs md:block'
+        loading='lazy'
+        height={700}
+        width={320}
+        alt=''
+      />
       <div
         className={`${
-          clientHeight > 650 ? "py-80" : "py-72"
+          clientHeight > 650 ? 'py-80' : 'py-72'
         } section-container`}
       >
         <h1
           ref={quoteRef}
-          className="font-medium text-[2.70rem] md:text-6xl lg:text-[4rem] text-center"
+          className='font-medium text-[2.70rem] md:text-6xl lg:text-[4rem] text-center'
         >
-          I have a <span className="about-3 font-bold">strong</span> obsession
+          I have a <span className='about-3 font-bold'>strong</span> obsession
           for attention to detail.
         </h1>
       </div>

@@ -3,7 +3,7 @@ export const METADATA = {
   title: 'Portfolio | Jovanni Morales',
   description:
     'Jovanni is a Frontend Developer from Chicago, interested in crafting beautiful and functional user experiences.',
-  siteUrl: 'https://www.shubhporwal.me/',
+  siteUrl: 'https://jm-dev.netlify.app/',
   twitterHandle: '@na',
   keywords: [
     'Jovanni Mirales',
@@ -15,7 +15,7 @@ export const METADATA = {
     'Portfolio',
   ].join(', '),
   image:
-    'https://res.cloudinary.com/dywdhyojt/image/upload/v1690572126/preview.png',
+    'https://res.cloudinary.com/dsisrccig/image/upload/v1705106207/preview_cfakgr.png',
   language: 'English',
 };
 

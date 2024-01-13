@@ -106,7 +106,7 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className='absolute  bottom-1.5 sm:w-[30%] sm:p-10 md:w-[40%] md:right-12 lg:visible lg:w-4/12 lg:right-12 2xl:right-16 '
+        className='absolute  bottom-1.5 sm:w-[10%] sm:p-10 md:w-[30%] md:right-12 lg:visible lg:w-4/12 lg:right-12 2xl:right-16 '
         ref={lottieRef}
       ></div>
     </section>

@@ -101,8 +101,8 @@ const Projects = ({ isDesktop, clientHeight }) => {
             Some things I&apos;ve built with love, expertise and a pinch of
             magic.{' '}
           </h2>
-          <h2 className='text-[1rem] font-small md:max-w-lg max-w-sm mt-2 seq invisible sm:visible'>
-            (swipe right)
+          <h2 className='text-[1rem] font-small md:max-w-lg max-w-sm mt-2 seq  sm:invisible'>
+            (swipe left)
           </h2>
         </div>
         <div
